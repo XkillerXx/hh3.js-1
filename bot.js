@@ -132,7 +132,7 @@ client.on('message', eyad => {
 
   if (eyad.content.startsWith('+mute')) {
 
-if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
+if (!eyad.member.hasPermission("ADMINISTRATOR")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 
 let men = eyad.mentions.users.first()
 
@@ -194,7 +194,7 @@ client.on('message', eyad => {
 
   if (eyad.content.startsWith('+unmute')) {
 
-if (!eyad.member.hasPermission("MOVE_MEMBERS")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
+if (!eyad.member.hasPermission("ADMINISTRATOR")) return eyad.channel.send("**انت لا تمتلك الخاصيه المطلوبه** | ❎ ");
 
  let men = eyad.mentions.users.first()
 
@@ -551,7 +551,7 @@ client.on("message", message => {
 
   
 
-const devs = ['469520103042449408' , '469164572960358420' , '' , ''];
+const devs = ['336773905043685390' , '469164572960358420' , '' , ''];
 
 const adminprefix = "+";
 
