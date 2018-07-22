@@ -252,7 +252,7 @@ eyad.channel.sendEmbed(Embed11).then(eyad => {eyad.delete(20000)})
 
 client.on('message' , message => {
 
-    var prefix = "+";
+    
 
     let user = message.mentions.users.first()|| client.users.get(message.content.split(' ')[1])
 
@@ -308,7 +308,8 @@ client.on("message", (message) => {
 
 });
 
-var prefix = "+"
+
+
 
 client.on('message', message => {
 
@@ -478,7 +479,7 @@ message.channel.sendMessage('**الرجاء الانتظار ريث ما يتم 
 
 client.on('message' , message => {
 
-    var prefix = "+";
+    
 
     let user = message.mentions.users.first() || message.author;
 
@@ -508,7 +509,7 @@ if(message.content.startsWith(prefix+"roles")) {
 
 client.on("message", message => {
 
-    var prefix = "+";
+   
 
             var args = message.content.substring(prefix.length).split(" ");
 
