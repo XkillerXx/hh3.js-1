@@ -24,6 +24,28 @@ client.on('message', message => {
 
 
 
+
+
+
+ client.on("message", async message => {
+    if (message.author.bot) return;
+    if (message.channel.type === "dm") return;
+    if (!message.member.voiceChannel) return;
+    let messageArray = message.content.split(" ");
+    let command = messageArray[0];
+
+if (command === prefix+ `join`) {
+
+        message.member.voiceChannel.join()
+    message.channel.send('**Joined**')
+};
+
+});  
+
+
+
+
+
 client.on('message', msg => {
 
   if (msg.content === '+help') {
